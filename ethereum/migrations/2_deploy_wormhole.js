@@ -2,7 +2,7 @@ require('dotenv').config({ path: "../.env" });
 
 const Setup = artifacts.require("Setup");
 const Implementation = artifacts.require("Implementation");
-const Wormhole = artifacts.require("Wormhole");
+const Loophole = artifacts.require("Loophole");
 
 // CONFIG
 const initialSigners = JSON.parse(process.env.INIT_SIGNERS);
@@ -28,5 +28,5 @@ module.exports = async function (deployer) {
     ).encodeABI();
 
     // deploy proxy
-    await deployer.deploy(Wormhole, Setup.address, initData);
+    await deployer.deploy(Loophole, Setup.address, initData);
 };

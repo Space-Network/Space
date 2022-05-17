@@ -4,7 +4,7 @@ const TokenBridge = artifacts.require("NFTBridgeEntrypoint");
 const BridgeImplementation = artifacts.require("NFTBridgeImplementation");
 const BridgeSetup = artifacts.require("NFTBridgeSetup");
 const TokenImplementation = artifacts.require("NFTImplementation");
-const Wormhole = artifacts.require("Wormhole");
+const Loophole = artifacts.require("Loophole");
 
 const chainId = process.env.BRIDGE_INIT_CHAIN_ID;
 const governanceChainId = process.env.BRIDGE_INIT_GOV_CHAIN_ID;
@@ -25,7 +25,7 @@ module.exports = async function (deployer) {
     const initData = setup.methods.setup(
         BridgeImplementation.address,
         chainId,
-        (await Wormhole.deployed()).address,
+        (await Loopshole.deployed()).address,
         governanceChainId,
         governanceContract,
         TokenImplementation.address
