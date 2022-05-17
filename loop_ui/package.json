@@ -20,6 +20,7 @@
     "@solana/web3.js": "^1.35.1",
     "@terra-money/wallet-provider": "^3.8.0",
     "algosdk": "^1.15.0",
+    "all": "^0.0.0",
     "axios": "^0.21.1",
     "bech32": "^1.1.4",
     "bn.js": "^5.1.3",

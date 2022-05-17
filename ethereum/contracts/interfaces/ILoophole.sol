@@ -5,7 +5,7 @@ pragma solidity ^0.8.0;
 
 import "../Structs.sol";
 
-interface IWormhole is Structs {
+interface ILoophole is Structs {
     event LogMessagePublished(address indexed sender, uint64 sequence, uint32 nonce, bytes payload, uint8 consistencyLevel);
 
     function publishMessage(

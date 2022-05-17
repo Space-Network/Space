@@ -3,7 +3,7 @@ import { Link as RouterLink, NavLink } from "react-router-dom";
 import Discord from "../icons/Discord.svg";
 import Github from "../icons/Github.svg";
 import Medium from "../icons/Medium.svg";
-import Portal from "../icons/portal_logo_w.svg";
+//import Portal from "../icons/portal_logo_w.svg";
 import Telegram from "../icons/Telegram.svg";
 import Twitter from "../icons/Twitter.svg";
 import footerImg from "../images/Footer.png";
@@ -143,7 +143,7 @@ export default function Footer() {
         <div className={classes.flex}>
           <div className={classes.logoWrapper}>
             <RouterLink to={"/transfer"}>
-              <img src={Portal} alt="Portal" className={classes.wormholeIcon} />
+              <img src="" alt="" className={classes.wormholeIcon} />
             </RouterLink>
           </div>
           <div className={classes.spacer} />
@@ -157,7 +157,7 @@ export default function Footer() {
                 className={classes.linkStyle}
                 activeClassName={classes.linkActiveStyle}
               >
-                Bridge
+                Loop
               </Link>
               <Link
                 href="https://docs.wormholenetwork.com/wormhole/faqs"
@@ -187,7 +187,7 @@ export default function Footer() {
                 underline="hover"
                 className={classes.linkStyle}
               >
-                Wormhole
+                SpaceNetwork
               </Link>
               <Link
                 component={NavLink}
@@ -204,7 +204,7 @@ export default function Footer() {
           <div className={classes.spacer} />
           <div className={classes.socialWrapper}>
             <Typography className={classes.socialHeader}>
-              Let's be friends
+              Explore the community
             </Typography>
             <IconButton
               href="https://discord.gg/wormholecrypto"
@@ -249,17 +249,17 @@ export default function Footer() {
           </div>
           <div className={classes.copyWrapper}>
             <Typography variant="body2" gutterBottom>
-              2022 &copy; Wormhole. All Rights Reserved.
+              2022 &copy; SpaceNetwork. All Rights Reserved.
             </Typography>
           </div>
           <Typography variant="body2">
-            This Interface is an open source software portal to Wormhole, a
-            cross chain messaging protocol. THIS INTERFACE AND THE WORMHOLE
+            This Interface is an open source software Loop to SpaceNetwork, a
+            cross chain messaging protocol. THIS INTERFACE AND THE SPACENETWORK
             PROTOCOL ARE PROVIDED "AS IS", AT YOUR OWN RISK, AND WITHOUT
             WARRANTIES OF ANY KIND. By using or accessing this Interface or
-            Wormhole, you agree that no developer or entity involved in
+            spacenetwork, you agree that no developer or entity involved in
             creating, deploying, maintaining, operating this Interface or
-            Wormhole, or causing or supporting any of the foregoing, will be
+            SpaceNetwork, or causing or supporting any of the foregoing, will be
             liable in any manner for any claims or damages whatsoever associated
             with your use, inability to use, or your interaction with other
             users of, this Interface or Wormhole, or this Interface or Wormhole

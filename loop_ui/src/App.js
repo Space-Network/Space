@@ -42,7 +42,7 @@ import Transfer from "./components/Transfer";
 import UnwrapNative from "./components/UnwrapNative";
 import WithdrawTokensTerra from "./components/WithdrawTokensTerra";
 import { useBetaContext } from "./contexts/BetaContext";
-import Portal from "./icons/portal_logo.svg";
+//import Portal from "./icons/portal_logo.svg";
 import Header from "./images/Header.png";
 import { CLUSTER } from "./utils/consts";
 
@@ -214,7 +214,7 @@ function App() {
             to="/transfer"
             className={classes.brandLink}
           >
-            <img src={Portal} alt="Portal" className={classes.wormholeIcon} />
+            <img src="" alt="Portal" className={classes.wormholeIcon} />
           </Link>
           <div className={classes.spacer} />
           <Hidden implementation="css" xsDown>
@@ -225,7 +225,7 @@ function App() {
                 color="inherit"
                 className={classes.link}
               >
-                Bridge
+                Loop
               </Link>
               <Link
                 href="https://docs.wormholenetwork.com/wormhole/faqs"
@@ -252,7 +252,7 @@ function App() {
                 color="inherit"
                 className={classes.link}
               >
-                Wormhole
+                Space
               </Link>
             </div>
           </Hidden>
@@ -294,17 +294,19 @@ function App() {
             subtitle={
               <>
                 <Typography>
-                  Portal is a bridge that offers unlimited transfers across
-                  chains for tokens and NFTs wrapped by Wormhole.
+                  Loop is a bridge on Conflux eSpace Network that offers unlimited Assets and NFTs transfers across
+                  Blockchains that is wrapped by SpaceNetwork.
                 </Typography>
                 <Typography>
-                  Unlike many other bridges, you avoid double wrapping and never
-                  have to retrace your steps.
+                  Unlike many other bridges, it Brings the First NFT bridge on Conflux eSpace.
+                </Typography>
+                <Typography>
+                  Always Stay in the Loop with SpaceNetwork
                 </Typography>
               </>
             }
           >
-            Token Bridge
+            Token Loop
           </HeaderText>
           <Tabs
             value={pathname}

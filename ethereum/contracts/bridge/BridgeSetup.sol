@@ -12,7 +12,7 @@ contract BridgeSetup is BridgeSetters, ERC1967Upgrade {
     function setup(
         address implementation,
         uint16 chainId,
-        address wormhole,
+        address loophole,
         uint16 governanceChainId,
         bytes32 governanceContract,
         address tokenImplementation,
@@ -20,7 +20,7 @@ contract BridgeSetup is BridgeSetters, ERC1967Upgrade {
     ) public {
         setChainId(chainId);
 
-        setWormhole(wormhole);
+        setWormhole(loophole);
 
         setGovernanceChainId(governanceChainId);
         setGovernanceContract(governanceContract);

@@ -34,14 +34,15 @@ import oasisIcon from "../icons/oasis-network-rose-logo.svg";
 import polygonIcon from "../icons/polygon.svg";
 import solanaIcon from "../icons/solana.svg";
 import terraIcon from "../icons/terra.svg";
+import espaceIcon from "../icons/CFX.svg";
 
 export type Cluster = "devnet" | "testnet" | "mainnet";
 export const CLUSTER: Cluster =
   process.env.REACT_APP_CLUSTER === "mainnet"
     ? "mainnet"
     : process.env.REACT_APP_CLUSTER === "testnet"
-    ? "testnet"
-    : "devnet";
+    ? "devnet"
+    : "testnet";
 export interface ChainInfo {
   id: ChainId;
   name: string;
@@ -103,21 +104,7 @@ export const CHAINS: ChainInfo[] =
       ]
     : CLUSTER === "testnet"
     ? [
-        {
-          id: CHAIN_ID_ACALA,
-          name: "Acala",
-          logo: acalaIcon,
-        },
-        {
-          id: CHAIN_ID_ALGORAND,
-          name: "Algorand",
-          logo: algorandIcon,
-        },
-        {
-          id: CHAIN_ID_AURORA,
-          name: "Aurora",
-          logo: auroraIcon,
-        },
+        
         {
           id: CHAIN_ID_AVAX,
           name: "Avalanche",
@@ -129,39 +116,14 @@ export const CHAINS: ChainInfo[] =
           logo: bscIcon,
         },
         {
-          id: CHAIN_ID_CELO,
-          name: "Celo",
-          logo: celoIcon,
-        },
-        {
           id: CHAIN_ID_ETH,
-          name: "Ethereum (Goerli)",
-          logo: ethIcon,
+          name: "Conflux eSpace (Testnet)",
+          logo: espaceIcon,
         },
         {
           id: CHAIN_ID_ETHEREUM_ROPSTEN,
           name: "Ethereum (Ropsten)",
           logo: ethIcon,
-        },
-        {
-          id: CHAIN_ID_FANTOM,
-          name: "Fantom",
-          logo: fantomIcon,
-        },
-        {
-          id: CHAIN_ID_KARURA,
-          name: "Karura",
-          logo: karuraIcon,
-        },
-        {
-          id: CHAIN_ID_KLAYTN,
-          name: "Klaytn",
-          logo: klaytnIcon,
-        },
-        {
-          id: CHAIN_ID_OASIS,
-          name: "Oasis",
-          logo: oasisIcon,
         },
         {
           id: CHAIN_ID_POLYGON,
@@ -172,11 +134,6 @@ export const CHAINS: ChainInfo[] =
           id: CHAIN_ID_SOLANA,
           name: "Solana",
           logo: solanaIcon,
-        },
-        {
-          id: CHAIN_ID_TERRA,
-          name: "Terra",
-          logo: terraIcon,
         },
       ]
     : [
